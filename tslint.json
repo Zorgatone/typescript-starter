@@ -92,51 +92,61 @@
       }
     ],
     "linebreak-style": [true, "LF"],
-    "ter-max-len": {
-      "code": 80,
-      "tabWidth": 2,
-      "comments": 80,
-      "ignorePattern": "^\\s*(let|const)\\s.+=\\s*require\\s*\\(",
-      "ignoreComments": false,
-      "ignoreTrailingComments": false,
-      "ignoreUrls": false,
-      "ignoreStrings": false,
-      "ignoreTemplateLiterals": false,
-      "ignoreRegExpLiterals": true,
-      "ignoreImports": true
-    }
-  },
-  "max-file-line-count": [true, 300],
-  "new-parens": true,
-  "ter-newline-after-var": [true, "always"],
-  "no-bitwise": true,
-  "ter-no-mixed-spaces-and-tabs": { "type": "spaces" },
-  "no-consecutive-blank-lines": true,
-  "no-trailing-whitespace": true,
-  "object-curly-spacing": [true, "always"],
-  "one-variable-per-declaration": [true, "ignore-for-loop"],
-  "object-literal-key-quotes": [true, "as-needed"],
-  "quotemark": [true, "double", "jsx-double", "avoid-escape", "avoid-template"],
-  "semicolon": [true, "always", "strict-bound-class-methods"],
-  "sort-imports": [true],
-  "comment-format": [true, "check-space", "check-uppercase"],
-  "ter-no-tabs": true,
-  "ter-arrow-body-style": [
-    true,
-    "as-needed",
-    {
-      "requireReturnForObjectLiteral": false
-    }
-  ],
-  "ter-arrow-parens": [true, "always"],
-  "no-var-keyword": true,
-  "object-literal-shorthand": false,
-  "ter-prefer-arrow-callback": [
-    true,
-    {
-      "allowNamedFunctions": true,
-      "allowUnboundThis": false
-    }
-  ],
-  "prefer-const": [true, { "destructuring": "any" }]
+    "ter-max-len": [
+      true,
+      80,
+      {
+        "code": 80,
+        "tabWidth": 2,
+        "comments": 80,
+        "ignorePattern": "^\\s*(let|const)\\s.+=\\s*require\\s*\\(",
+        "ignoreComments": false,
+        "ignoreTrailingComments": false,
+        "ignoreUrls": true,
+        "ignoreStrings": false,
+        "ignoreTemplateLiterals": false,
+        "ignoreRegExpLiterals": true,
+        "ignoreImports": true
+      }
+    ],
+    "max-file-line-count": [true, 300],
+    "new-parens": true,
+    "ter-newline-after-var": [true, "always"],
+    "no-bitwise": true,
+    "ter-no-mixed-spaces-and-tabs": { "type": "spaces" },
+    "no-consecutive-blank-lines": true,
+    "no-trailing-whitespace": true,
+    "object-curly-spacing": [true, "always"],
+    "one-variable-per-declaration": [true, "ignore-for-loop"],
+    "object-literal-key-quotes": [true, "as-needed"],
+    "quotemark": [
+      true,
+      "double",
+      "jsx-double",
+      "avoid-escape",
+      "avoid-template"
+    ],
+    "semicolon": [true, "always", "strict-bound-class-methods"],
+    "sort-imports": [true],
+    "comment-format": [true, "check-space"],
+    "ter-no-tabs": true,
+    "ter-arrow-body-style": [
+      true,
+      "as-needed",
+      {
+        "requireReturnForObjectLiteral": false
+      }
+    ],
+    "ter-arrow-parens": [true, "always"],
+    "no-var-keyword": true,
+    "object-literal-shorthand": false,
+    "ter-prefer-arrow-callback": [
+      true,
+      {
+        "allowNamedFunctions": true,
+        "allowUnboundThis": false
+      }
+    ],
+    "prefer-const": [true, { "destructuring": "any" }]
+  }
 }
