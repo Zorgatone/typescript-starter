@@ -57,8 +57,6 @@
     "no-string-throw": true,
     "radix": true,
     "no-shadowed-variable": true,
-    "no-unused-variable": true, // deprecated
-    "no-use-before-declare": true,
     "handle-callback-err": true,
     "array-bracket-spacing": [true, "always"],
     "block-spacing": [true, "always"],
