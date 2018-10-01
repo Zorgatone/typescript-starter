@@ -1,10 +1,144 @@
 {
-  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "extends": [
+    "tslint-eslint-rules",
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-config-prettier"
+  ],
   "linterOptions": {
     "exclude": [
       "config/**/*.js",
       "node_modules/**/*.ts",
       "coverage/lcov-report/*.js"
     ]
-  }
+  },
+  "rules": {
+    "trailing-comma": true,
+    "no-conditional-assignment": true,
+    "no-console": true,
+    "no-constant-condition": true,
+    "no-control-regex": true,
+    "no-debugger": true,
+    "no-duplicate-case": true,
+    "no-empty": true,
+    "no-empty-character-class": true,
+    "no-ex-assign": true,
+    "no-extra-boolean-cast": true,
+    "no-extra-semi": true,
+    "no-inner-declarations": true,
+    "no-invalid-regexp": true,
+    "no-irregular-whitespace": true,
+    "no-regex-spaces": true,
+    "no-sparse-arrays": true,
+    "no-unexpected-multiline": true,
+    "no-unsafe-finally": true,
+    "use-isnan": true,
+    "valid-jsdoc": true,
+    "valid-typeof": true,
+    "cyclomatic-complexity": true,
+    "curly": true,
+    "switch-default": true,
+    "triple-equals": true,
+    "forin": true,
+    "ban": true,
+    "no-arg": true,
+    "no-eval": true,
+    "no-switch-case-fall-through": true,
+    "no-invalid-this": true,
+    "label-position": true,
+    "no-magic-numbers": true,
+    "no-multi-spaces": true,
+    "no-unused-expression": true,
+    "no-construct": true,
+    "ter-no-proto": true,
+    "no-duplicate-variable": true,
+    "ter-no-script-url": true,
+    "ter-no-self-compare": true,
+    "no-string-throw": true,
+    "radix": true,
+    "no-shadowed-variable": true,
+    "no-unused-variable": true, // deprecated
+    "no-use-before-declare": true,
+    "handle-callback-err": true,
+    "array-bracket-spacing": [true, "always"],
+    "block-spacing": [true, "always"],
+    "brace-style": [true, "1tbs", { "allowSingleLine": true }],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore"
+    ],
+    "ter-computed-property-spacing": [true, "always"],
+    "eofline": true,
+    "ter-func-call-spacing": [true, "never"],
+    "ter-indent": [
+      true,
+      2,
+      {
+        "SwitchCase": 1,
+        "VariableDeclarator": 1,
+        "outerIIFEBody": 1,
+        "MemberExpression": 1,
+        "FunctionDeclaration": {
+          "parameters": 1,
+          "body": 1
+        },
+        "FunctionExpression": {
+          "parameters": 1,
+          "body": 1
+        },
+        "CallExpression": {
+          "arguments": 1
+        }
+      }
+    ],
+    "linebreak-style": [true, "LF"],
+    "ter-max-len": {
+      "code": 80,
+      "tabWidth": 2,
+      "comments": 80,
+      "ignorePattern": "^\\s*(let|const)\\s.+=\\s*require\\s*\\(",
+      "ignoreComments": false,
+      "ignoreTrailingComments": false,
+      "ignoreUrls": false,
+      "ignoreStrings": false,
+      "ignoreTemplateLiterals": false,
+      "ignoreRegExpLiterals": true,
+      "ignoreImports": true
+    }
+  },
+  "max-file-line-count": [true, 300],
+  "new-parens": true,
+  "ter-newline-after-var": [true, "always"],
+  "no-bitwise": true,
+  "ter-no-mixed-spaces-and-tabs": { "type": "spaces" },
+  "no-consecutive-blank-lines": true,
+  "no-trailing-whitespace": true,
+  "object-curly-spacing": [true, "always"],
+  "one-variable-per-declaration": [true, "ignore-for-loop"],
+  "object-literal-key-quotes": [true, "as-needed"],
+  "quotemark": [true, "double", "jsx-double", "avoid-escape", "avoid-template"],
+  "semicolon": [true, "always", "strict-bound-class-methods"],
+  "sort-imports": [true],
+  "comment-format": [true, "check-space", "check-uppercase"],
+  "ter-no-tabs": true,
+  "ter-arrow-body-style": [
+    true,
+    "as-needed",
+    {
+      "requireReturnForObjectLiteral": false
+    }
+  ],
+  "ter-arrow-parens": [true, "always"],
+  "no-var-keyword": true,
+  "object-literal-shorthand": false,
+  "ter-prefer-arrow-callback": [
+    true,
+    {
+      "allowNamedFunctions": true,
+      "allowUnboundThis": false
+    }
+  ],
+  "prefer-const": [true, { "destructuring": "any" }]
 }
